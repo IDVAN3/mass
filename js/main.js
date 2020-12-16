@@ -50,7 +50,7 @@ $(document).ready(function () {
             $('.main-screen__content').css('max-width', '100%');
         } else {
             ths.removeClass('active');
-            $('.js-row-filter[data-filter="' + atr + '"]').slideUp(300);
+            $('.js-row-filter[data-filter="' + atr + '"]').slideUp(0);
             $('.main-screen__content').css('max-width', '735px');
         }
     });
