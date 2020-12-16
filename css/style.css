@@ -1793,6 +1793,8 @@ button.btn_it-cat {
   color: #FFFFFF;
   font-size: 12px;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 .main-screen__info.pad15 {
   padding: 0 15px;
@@ -2817,6 +2819,7 @@ button.btn_it-cat {
   background: #FFFFFF;
   width: 167px;
   height: 2px;
+  margin-top: 1px;
   position: relative;
 }
 .my-skin .irs {
@@ -2983,7 +2986,7 @@ button.btn_it-cat {
 }
 
 .pt74 {
-  padding-top: 36px;
+  padding-top: 32px;
 }
 
 .hide-item {
