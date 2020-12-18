@@ -78,7 +78,7 @@ $(document).ready(function () {
         nextArrow: $('.slider__btn-next'),
     });
 
-    $('.sparay-slider').slick({
+    $('.sparay__img').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -97,7 +97,7 @@ $(document).ready(function () {
             }
         },
         {
-            breakpoint: 767,
+            breakpoint: 640,
             settings: {
                 slidesToShow: 1,
                 rows: 1,
