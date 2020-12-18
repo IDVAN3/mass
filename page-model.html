@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<!-- Оболочка документа -->
+<html lang="ru">
+
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <title>Страница модели</title>
+    <meta name="description" content="Massage">
+    <meta name="keywords" content="Massage">
+
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- ОБОЛОЧКА -->
+    <div class="wrapper">
+
+        <div class="wrapper__content">
+<!-- шапка сайта -->
+
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <!--этот класс только на главной no-pointer -->
+                    <a href="#" class="no-pointer ">
+                        <img src="img/svg/logo.svg" alt="">
+                    </a>
+                </div>
+                <a href="#" class="header__geolocation pc-v">
+                    <svg class="header__icon">
+                        <use xlink:href="img/svg/sprite.svg#geo"></use>
+                    </svg>
+                    <span class="header__title">Город: <span>Екатеринбург</span></span>
+                </a>
+                <a href="#" class="header__geolocation pc-v">
+                    <svg class="header__icon">
+                        <use xlink:href="img/svg/sprite.svg#geo"></use>
+                    </svg>
+                    <span class="header__title">Метро: <span>Кутузовская</span></span>
+                </a>
+            </div>
+            <div class="header__wr-menu">
+                <nav class="header__menu header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link"><span>Анкеты</span></a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link"><span>Личный кабинет</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__burger js-burger-menu">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu js-mob-menu">
+    <div class="mobile-menu__close">
+        <a href="#" class="js-close-mob-menu">
+            <svg>
+                <use xlink:href="img/svg/sprite.svg#close1"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="mobile-menu__content">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="#">О проекте</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#">Реклама</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#">Регистрация</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="header-menu__link">
+                    <i class="svg-icons svg-icons_out">
+                        <svg>
+                            <use xlink:href="img/svg/sprite.svg#out"></use>
+                        </svg>
+                    </i>
+                    <span>Выход</span>
+                </a>
+            </li>
+            <!-- <li class="mobile-menu__item">
+                <a href="#">Войти</a>
+            </li> -->
+        </ul>
+    </div>
+</div>
+
+<div class="bg-mob js-bg-mob"></div>
+            <section class="section-model section_pad_top model">
+                <div class="container">
+                    <div class="slider">
+                        <div class="slider__btn slider__btn-prev js-slider-btn">
+                            <i class="svg-icons">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.svg#arrow-left"></use>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="slider-model js-slider-model">
+                            <div class="slider-model__item">
+                                <div class="slider-model__item--img">
+                                    <img src="img/slider-1.webp" alt="img">
+                                </div>
+                            </div>
+                            <div class="slider-model__item">
+                                <div class="slider-model__item--img">
+                                    <img src="img/slider-2.webp" alt="img">
+                                </div>
+                            </div>
+                            <div class="slider-model__item">
+                                <div class="slider-model__item--img">
+                                    <img src="img/slider-3.webp" alt="img">
+                                </div>
+                            </div>
+                            <div class="slider-model__item">
+                                <div class="slider-model__item--img">
+                                    <img src="img/slider-1.webp" alt="img">
+                                </div>
+                            </div>
+                            <div class="slider-model__item">
+                                <div class="slider-model__item--img">
+                                    <img src="img/slider-2.webp" alt="img">
+                                </div>
+                            </div>
+                            <div class="slider-model__item">
+                                <div class="slider-model__item--img">
+                                    <img src="img/slider-3.webp" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__btn slider__btn-next js-slider-btn">
+                            <i class="svg-icons">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="model__title">
+                        <h1 class="title-type-1 main-screen__title t_center t_underline">алина</h1>
+                    </div>
+
+                    
+
+                    <div class="row-page row-page_marg">
+                        <div class="col-2">
+                            <h2 class="title-type-2">Параметры</h2>
+                            <div class="content-item">
+                                <ul class="list-page">
+                                    <li class="list-page__item">
+                                        <span>Возраст</span>
+                                        <span>175 cm</span>
+                                    </li>
+                                    <li class="list-page__item">
+                                        <span>Вес</span>
+                                        <span>62 kg</span>
+                                    </li>
+                                    <li class="list-page__item">
+                                        <span>Грудь</span>
+                                        <span>93cm</span>
+                                    </li>
+                                    <li class="list-page__item">
+                                        <span>Рост</span>
+                                        <span>61 cm</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="content-item">
+                                <div class="table-grid">
+                                    <div class="table-grid__row">
+                                        <div class="table-grid__col">
+                                            <h3 class="title-type-2">время</h3>
+                                        </div>
+                                        <div class="table-grid__col">
+                                            <h3 class="title-type-2">у себя</h3>
+                                        </div>
+                                        <div class="table-grid__col">
+                                            <h3 class="title-type-2">выезд</h3>
+                                        </div>
+                                    </div>
+                                    <div class="table-grid__row">
+                                        <div class="table-grid__col">
+                                            <span>30 мин</span>
+                                        </div>
+                                        <div class="table-grid__col">
+                                            <span>1 500 руб.</span>
+                                        </div>
+                                        <div class="table-grid__col">
+                                            <span>Нет</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-grid__row">
+                                        <div class="table-grid__col">
+                                            <span>1 час</span>
+                                        </div>
+                                        <div class="table-grid__col">
+                                            <span>3 000 руб.</span>
+                                        </div>
+                                        <div class="table-grid__col">
+                                            <span>Нет</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-grid__row">
+                                        <div class="table-grid__col">
+                                            <span>2 часа</span>
+                                        </div>
+                                        <div class="table-grid__col">
+                                            <span>4 000 руб.</span>
+                                        </div>
+                                        <div class="table-grid__col">
+                                            <span>Нет</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-grid__row">
+                                        <div class="table-grid__col">
+                                            <span>3 часа</span>
+                                        </div>
+                                        <div class="table-grid__col">
+                                            <span>5 000 руб.</span>
+                                        </div>
+                                        <div class="table-grid__col">
+                                            <span>10 000 руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="title-type-2 title-type-2-padb">виды услуг</h3>
+                                <div class="type-services">
+                                    <div class="main-screen__param-item type-item">
+                                        <h3 class="options__title">Минет</h3>
+                                        <p class="type__text">С резинкой</p>
+                                        <p class="type__text">Без резинки</p>
+                                        <p class="type__text">Глубокий</p>
+                                        <p class="type__text">В машине</p>
+                                        <p class="type__text">Кунилингус</p>
+                                        <p class="type__text">Анилингус</p>
+                                    </div>
+                                    <div class="main-screen__param-item type-item">
+                                        <h3 class="options__title pt0">Секс</h3>
+                                        <p class="type__text">Классический</p>
+                                        <p class="type__text">Анальный</p>
+                                        <p class="type__text">Групповой</p>
+                                        <p class="type__text">Лесбийский</p>
+                                    </div>
+                                    <div class="main-screen__param-item type-item">
+                                        <h3 class="options__title">Окончание</h3>
+                                        <p class="type__text">В рот</p>
+                                        <p class="type__text">На лицо</p>
+                                        <p class="type__text">На грудь</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-2">
+                            <h2 class="title-type-2">О мне</h2>
+                            <div class="content-item">
+                                <div class="text-cont">
+                                    <p>Quisque semper lacinia lacus a sagittis. Nullam ultrices tempus dignissim. Proin
+                                        in lorem tempus, vulputate felis ultricies, porta elit. Proin eget odio diam.
+                                        Sed dapibus ante sem, nec iaculis arcu semper non. Curabitur fringilla mauris
+                                        vitae risus tincidunt pretium a a sem. Nulla ut vehicula dolor. Vivamus
+                                        fringilla odio a sapien accumsan dapibus.</p>
+                                </div>
+                                <div class="sparay__geo geo-model">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-sparay-link">
+                                    <a href="tel:+7 (999) 888-77-66" class="sparay__link" tabindex="0">+7 (999) 888-77-66</a>
+                                </div>
+                                <div class="social-wrapper">
+                                    <div class="social__item social__telegram">
+                                        <a href="#" class="social__text">
+                                            <img src="img/icons/tel.png" alt="">
+                                            <span>Telegram</span>
+                                        </a>
+                                    </div>
+                                    <div class="social__item social__whatsapp">
+                                        <a href="#" class="social__text">
+                                            <img src="img/icons/what.png" alt="">
+                                            <span>Whatsapp</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="form-sign">
+                                    <h3 class="title-type-2">Записаться</h3>
+                                    <form action="#">
+                                        <div class="rows form-sign__row">
+                                            <div class="col-3">
+                                                <div class="form-item">
+                                                    <input type="text" name="phone" class="input-type-2"
+                                                        placeholder="Телефон*">
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-item">
+                                                    <input type="text" name="name" class="input-type-2"
+                                                        placeholder="Имя">
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-item">
+                                                    <div class="el-select el-select_black js-select">
+                                                        <div class="el-select__main js-select-main">
+                                                            <span
+                                                                class="el-select__text js-select-text"><span>Время</span></span>
+                                                            <i class="svg-icons">
+                                                                <svg>
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow-bot">
+                                                                    </use>
+                                                                </svg>
+                                                            </i>
+                                                        </div>
+                                                        <div class="el-select__content js-content-select">
+                                                            <div class="el-select__scroll">
+                                                                <ul class="el-select__list">
+                                                                    <li class="el-select__item js-select-item"
+                                                                        data-id="0">
+                                                                        <span>Время 1</span></li>
+                                                                    <li class="el-select__item js-select-item"
+                                                                        data-id="1">
+                                                                        <span>Время 2</span>
+                                                                    </li>
+                                                                    <li class="el-select__item js-select-item"
+                                                                        data-id="2">
+                                                                        <span>Время 3</span></li>
+                                                                    <li class="el-select__item js-select-item"
+                                                                        data-id="3">
+                                                                        <span>Время 4</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-btn-rows">
+                                            <button type="submit"
+                                                class="btn-site btn-form-sub t_underline btn-type-1  mob-width">Отправить</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-btn-reviews">
+                        <div class="row-page">
+                            <div class="col-2">
+                                <a href="#" class="btn-reviews-show btn-type-1 btn-site">
+                                    <span>Отзывы <span>(0)</span></span>
+                                    <i class="svg-icons">
+                                        <svg>
+                                            <use xlink:href="img/svg/sprite.svg#arrow-bot"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row-reviews reviews">
+                            <p class="reviews__text">У девушки еще нет отзывов</p>
+                        </div>
+                        <div class="reviews-content">
+                            <p>Вы были у Алины? Будьте первым, кто оставит отзыв о девушке, если вам все понравилось</p>
+                            <p>Отзыв полностью анонимен, информация о клиентах не разглашается</p>
+                        </div>
+                        <div class="form-reviews">
+                            <form action="#">
+                                <p>Ваша оценка</p>
+                                <div class="appraisal">
+                                    <div class="appraisal__item">
+                                        <label class="appraisal__lab">
+                                            <input type="radio" name="radio" class="none">
+                                            <span class="appraisal__star star__item"></span>
+                                        </label>
+                                    </div>
+                                    <div class="appraisal__item">
+                                        <label class="appraisal__lab">
+                                            <input type="radio" name="radio" class="none">
+                                            <span class="appraisal__star star__item"></span>
+                                            <span class="appraisal__star star__item"></span>
+                                        </label>
+                                    </div>
+                                    <div class="appraisal__item">
+                                        <label class="appraisal__lab">
+                                            <input type="radio" name="radio" class="none">
+                                            <span class="appraisal__star star__item"></span>
+                                            <span class="appraisal__star star__item"></span>
+                                            <span class="appraisal__star star__item"></span>
+                                        </label>
+                                    </div>
+                                    <div class="appraisal__item">
+                                        <label class="appraisal__lab">
+                                            <input type="radio" name="radio" class="none">
+                                            <span class="appraisal__star star__item"></span>
+                                            <span class="appraisal__star star__item"></span>
+                                            <span class="appraisal__star star__item"></span>
+                                            <span class="appraisal__star star__item"></span>
+                                        </label>
+                                    </div>
+                                    <div class="appraisal__item">
+                                        <label class="appraisal__lab">
+                                            <input type="radio" name="radio" class="none">
+                                            <span class="appraisal__star star__item"></span>
+                                            <span class="appraisal__star star__item"></span>
+                                            <span class="appraisal__star star__item"></span>
+                                            <span class="appraisal__star star__item"></span>
+                                            <span class="appraisal__star star__item"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row-form-mar mt0">
+                                    <div class="text-form-top">Ваше имя</div>
+                                    <div class="wr-in-name">
+                                        <div class="form-item">
+                                            <input type="text" name="name" class="input-type-2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-form-mar">
+                                    <div class="text-form-top">Ваш отзыв</div>
+                                    <textarea class="textarea-black"></textarea>
+                                </div>
+                                <div class="reviews-row-btn">
+                                    <button type="submit"
+                                        class="btn-site btn-form-sub t_underline btn-type-1">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section-catalog section-catalog_m_t">
+                <div class="container">
+                    <h2 class="title-type-3">ДРУГИЕ ДЕВУШКИ</h2>
+                    <div class="catalog catalog-index">
+                            <div class="catalog__item-slider catalog-type">
+                                <div class="catalog__row">
+                                    <div class="catalog__img">
+                                        <img src="img/img-1.webp" alt="img">
+                                        <div class="catalog__img-content">
+                                            <div class="catalog__bg catalog__bg-1">100%</div>
+                                            <div class="catalog__bg catalog__bg-2">
+                                                <a href="#" class="youtube__link">
+                                                    <i class="svg-icons youtube-icons">
+                                                        <svg>
+                                                            <use xlink:href="img/svg/sprite.svg#youtube"></use>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog__img-content2">VIP</div>
+                                    </div>
+                                    <div class="catalog__content">
+                                        <h4 class="catalog__title">Ирина</h4>
+                                        <p class="catalog__text">25 лет</p>
+                                        <div class="catalog__line"></div>
+                                        <div class="catalog__info">
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Рост</p>
+                                                <p class="catalog__text catalog__text-bold">Ирина</p>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Вес</p>
+                                                <p class="catalog__text catalog__text-bold">55 кг</p>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Грудь</p>
+                                                <p class="catalog__text catalog__text-bold">3 размер</p>
+                                            </div>
+                                        </div>
+                                        <div class="catalog__line"></div>
+                                        <a href="tel:+7 (999) 999-99-99" class="catalog__link">+7 (999) 999-99-99</a>
+                                        <p class="catalog__text p5">г. Москва</p>
+                                        <p class="catalog__text">м. Кутузовская</p>
+                                        <div class="catalog__line"></div>
+                                        <div class="catalog__info">
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">1 час</p>
+                                                <p class="catalog__text catalog__text-bold">2 000</p>
+                                            </div>
+                                            <div class="catalog__wrapper-line">
+                                                <div class="catalog__line1"></div>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">2 часа</p>
+                                                <p class="catalog__text catalog__text-bold">4 000</p>
+                                            </div>
+                                            <div class="catalog__wrapper-line">
+                                                <div class="catalog__line1"></div>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Ночь</p>
+                                                <p class="catalog__text catalog__text-bold">8 000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn-type-2">анкета</button>
+                            </div>
+                            <div class="catalog__item-slider catalog-type">
+                                <div class="catalog__row">
+                                    <div class="catalog__img">
+                                        <img src="img/img-1.webp" alt="img">
+                                        <div class="catalog__img-content">
+                                            <div class="catalog__bg catalog__bg-1">100%</div>
+                                            <div class="catalog__bg catalog__bg-2">
+                                                <a href="#" class="youtube__link">
+                                                    <i class="svg-icons youtube-icons">
+                                                        <svg>
+                                                            <use xlink:href="img/svg/sprite.svg#youtube"></use>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog__img-content2">VIP</div>
+                                    </div>
+                                    <div class="catalog__content">
+                                        <h4 class="catalog__title">Ирина</h4>
+                                        <p class="catalog__text">25 лет</p>
+                                        <div class="catalog__line"></div>
+                                        <div class="catalog__info">
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Рост</p>
+                                                <p class="catalog__text catalog__text-bold">Ирина</p>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Вес</p>
+                                                <p class="catalog__text catalog__text-bold">55 кг</p>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Грудь</p>
+                                                <p class="catalog__text catalog__text-bold">3 размер</p>
+                                            </div>
+                                        </div>
+                                        <div class="catalog__line"></div>
+                                        <a href="tel:+7 (999) 999-99-99" class="catalog__link">+7 (999) 999-99-99</a>
+                                        <p class="catalog__text p5">г. Москва</p>
+                                        <p class="catalog__text">м. Кутузовская</p>
+                                        <div class="catalog__line"></div>
+                                        <div class="catalog__info">
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">1 час</p>
+                                                <p class="catalog__text catalog__text-bold">2 000</p>
+                                            </div>
+                                            <div class="catalog__wrapper-line">
+                                                <div class="catalog__line1"></div>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">2 часа</p>
+                                                <p class="catalog__text catalog__text-bold">4 000</p>
+                                            </div>
+                                            <div class="catalog__wrapper-line">
+                                                <div class="catalog__line1"></div>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Ночь</p>
+                                                <p class="catalog__text catalog__text-bold">8 000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn-type-2">анкета</button>
+                            </div>
+                            <div class="catalog__item-slider catalog-type">
+                                <div class="catalog__row">
+                                    <div class="catalog__img">
+                                        <img src="img/img-1.webp" alt="img">
+                                        <div class="catalog__img-content">
+                                            <div class="catalog__bg catalog__bg-1">100%</div>
+                                            <div class="catalog__bg catalog__bg-2">
+                                                <a href="#" class="youtube__link">
+                                                    <i class="svg-icons youtube-icons">
+                                                        <svg>
+                                                            <use xlink:href="img/svg/sprite.svg#youtube"></use>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog__img-content2">VIP</div>
+                                    </div>
+                                    <div class="catalog__content">
+                                        <h4 class="catalog__title">Ирина</h4>
+                                        <p class="catalog__text">25 лет</p>
+                                        <div class="catalog__line"></div>
+                                        <div class="catalog__info">
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Рост</p>
+                                                <p class="catalog__text catalog__text-bold">Ирина</p>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Вес</p>
+                                                <p class="catalog__text catalog__text-bold">55 кг</p>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Грудь</p>
+                                                <p class="catalog__text catalog__text-bold">3 размер</p>
+                                            </div>
+                                        </div>
+                                        <div class="catalog__line"></div>
+                                        <a href="tel:+7 (999) 999-99-99" class="catalog__link">+7 (999) 999-99-99</a>
+                                        <p class="catalog__text p5">г. Москва</p>
+                                        <p class="catalog__text">м. Кутузовская</p>
+                                        <div class="catalog__line"></div>
+                                        <div class="catalog__info">
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">1 час</p>
+                                                <p class="catalog__text catalog__text-bold">2 000</p>
+                                            </div>
+                                            <div class="catalog__wrapper-line">
+                                                <div class="catalog__line1"></div>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">2 часа</p>
+                                                <p class="catalog__text catalog__text-bold">4 000</p>
+                                            </div>
+                                            <div class="catalog__wrapper-line">
+                                                <div class="catalog__line1"></div>
+                                            </div>
+                                            <div class="catalog__wrapper">
+                                                <p class="catalog__text">Ночь</p>
+                                                <p class="catalog__text catalog__text-bold">8 000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn-type-2">анкета</button>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+<!-- подвал сайта -->
+
+<footer class="footer">
+
+    <div class="footer__main">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col-4">
+                    <h4 class="footer__title">инфо</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">О проекте</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Реклама</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Регистрация</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                    <h4 class="footer__title">Аккаунт</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Мой аккаунт</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Анкета</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Статистика</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Пополнить баланс</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__list">
+                        <li>
+                            <p>21 Love Lane, New York,<br> USA 01920</p>
+                        </li>
+                        <li>
+                            <a href="tel:79999999999" class="footer__list--link">+7 999 999 99 99</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__list--link">Telegram</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@modellic.com" class="footer__list--link">info@modellic.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                    <h4 class="footer__title">О нас</h4>
+                    <ul class="footer__list">
+                        <li>
+                            <p>Quisque porttitor tortor leo, at dapibus mi eleifend sit amet. Praesent eget scelerisque
+                                odio. Morbi semper velit in pharetra mollis...</p>
+                            <p><a href="#" class="text-link"><span>Узнать больше</span></a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bot">
+        <div class="container">
+            <div class="footer__bot--row">
+                <div class="footer__bot--copirite">© 2020 VIP </div>
+                <div class="footer__bot--text"><a href="#" class="polis-link">Политика конфедициальности</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+        <!-- <div class="main-favorites">
+                <a href="#" class="main-favorites__main">
+                    <i class="svg-icons">
+                        <svg>
+                            <use xlink:href="img/svg/sprite.svg#heart"></use>
+                        </svg>
+                    </i>
+                </a>
+            </div> -->
+
+    </div>
+
+ <!-- попап -->
+    <div class="popup js-popup" data-id-popup="popup-0">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup_container">
+                <h2>Попап</h2>
+            </div>
+        </div>
+    </div>
+ <!-- кнопка прокрутки вверх -->
+    <!-- <div class="scroll-up js-scroll-up">
+        <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+            <path class="scroll-up__path js-scroll-up__path" d="M24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48"/>
+        </svg>
+    </div> -->
+    
+    <!-- Подключеине скриптов -->
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="libs/fancybox3/jquery.fancybox.min.js"></script>
+    <script src="libs/ion/ion.rangeSlider.min.js"></script>
+    <!-- <script src="libs/jquery-ui.min.js"></script>
+    <script src="libs/jquery.ui.touch-punch.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

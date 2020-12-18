@@ -76,6 +76,21 @@ $(document).ready(function () {
         slidesToScroll: 1,
         prevArrow: $('.slider__btn-prev'),
         nextArrow: $('.slider__btn-next'),
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    rows: 1,
+                }
+            }
+            ]
     });
 
     $('.sparay__img').slick({
