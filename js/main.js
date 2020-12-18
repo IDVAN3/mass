@@ -78,6 +78,13 @@ $(document).ready(function () {
         nextArrow: $('.slider__btn-next'),
     });
 
+    $('.sparay-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+    });
+
     $('.slider-catalog').slick({
         slidesToShow: 3,
         slidesToScroll: 1,

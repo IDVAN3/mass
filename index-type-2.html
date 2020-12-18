@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<!-- Оболочка документа -->
+<html lang="ru">
+
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <title>Главная филтер </title>
+    <meta name="description" content="Massage">
+    <meta name="keywords" content="Massage">
+
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- ОБОЛОЧКА -->
+    <div class="wrapper wrapper_bg" style="background-image: url(img/bg-main-screen.webp);">
+
+        <div class="wrapper__content">
+<!-- шапка сайта -->
+
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <!--этот класс только на главной no-pointer -->
+                    <a href="#" class="no-pointer ">
+                        <img src="img/svg/logo.svg" alt="">
+                    </a>
+                </div>
+                <a href="#" class="header__geolocation pc-v">
+                    <svg class="header__icon">
+                        <use xlink:href="img/svg/sprite.svg#geo"></use>
+                    </svg>
+                    <span class="header__title">Город: <span>Екатеринбург</span></span>
+                </a>
+                <a href="#" class="header__geolocation pc-v">
+                    <svg class="header__icon">
+                        <use xlink:href="img/svg/sprite.svg#geo"></use>
+                    </svg>
+                    <span class="header__title">Метро: <span>Кутузовская</span></span>
+                </a>
+            </div>
+            <div class="header__wr-menu">
+                <nav class="header__menu header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link"><span>Анкеты</span></a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link"><span>Личный кабинет</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__burger js-burger-menu">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu js-mob-menu">
+    <div class="mobile-menu__close">
+        <a href="#" class="js-close-mob-menu">
+            <svg>
+                <use xlink:href="img/svg/sprite.svg#close1"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="mobile-menu__content">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="#">О проекте</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#">Реклама</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#">Регистрация</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="header-menu__link">
+                    <i class="svg-icons svg-icons_out">
+                        <svg>
+                            <use xlink:href="img/svg/sprite.svg#out"></use>
+                        </svg>
+                    </i>
+                    <span>Выход</span>
+                </a>
+            </li>
+            <!-- <li class="mobile-menu__item">
+                <a href="#">Войти</a>
+            </li> -->
+        </ul>
+    </div>
+</div>
+
+<div class="bg-mob js-bg-mob"></div>
+            <section class="main-screen">
+                <div class="container">
+                    <div class="main-screen__content">
+                        <h1 class="title-type-1 main-screen__title t_center t_underline">ЭРОТИЧЕСКИЙ МАССАЖ</h1>
+                        <div class="main-screen__text">
+                            <p>Наш сайт - лучший способ выбрать отдых, подходящий именно тебе</p>
+                        </div>
+                        <div class="main-screen__wr-btn">
+                            <div class="switch switch_index">
+                                <a href="#" class="switch__link  t_underline">ИНДИВИДУАЛЬНЫЙ</a>
+                                <a href="#" class="switch__link active t_underline">САЛОНЫ</a>
+                            </div>
+                        </div>
+                        <div class="main-screen__wr-filter">
+                            <form action="#">
+                                <div class="main-screen__param main-screen__param-salon">
+                                    <div class="df1">
+                                        <div class="main-screen__param-item">
+                                            <div class="pt74"></div>
+                                            <div class="options__line">
+                                                <div class="main-screen__info pad15">1 час от</div>
+                                                <input type="text" class="options__input-text" placeholder="2" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                                <div class="main-screen__info pad15">до</div>
+                                                <input type="text" class="options__input-text" placeholder="50000" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                            </div>
+                                            <div class="options__line">
+                                                <div class="main-screen__info pad13">2 час от</div>
+                                                <input type="text" class="options__input-text" placeholder="2" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                                <div class="main-screen__info pad15">до</div>
+                                                <input type="text" class="options__input-text" placeholder="60000" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                            </div>
+                                        </div>
+                                        <div class="main-screen__param-item">
+                                            <div class="pt74"></div>
+                                            <div class="wrapper-checkbox"> 
+                                                <div class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="info" id="checkbox_1">
+                                                    <label class="checkbox__label" for="checkbox_1">Фото проверено</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="info" id="checkbox_2">
+                                                    <label class="checkbox__label" for="checkbox_2">С видео</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-filter__btn-submit">
+                                    <button class="btn-site btn-submit btn_uper btn-type-1">ПОИСК</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-catalog">
+                <div class="container">
+                    <div class="sparay-slider sparay-main-slider">
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay.webp" alt="">
+                                <div class="catalog__img-content2 sparay__vip">
+                                    <img src="img/icons/vip.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-sparay-link">
+                                    <a href="tel:+7 (999) 888-77-66" class="sparay__link" tabindex="0">+7 (999) 888-77-66</a>
+                                </div>
+                                <div class="sparay-min__img">
+                                    <div class="wrapper-img-sparay">
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="sparay-min__img-item count-sparay-girls">
+                                        +3
+                                    </div>
+                                </div>
+                                <div class="wrapper-button-see">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay.webp" alt="">
+                                <div class="catalog__img-content2 sparay__vip">
+                                    <img src="img/icons/vip.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-sparay-link">
+                                    <a href="tel:+7 (999) 888-77-66" class="sparay__link" tabindex="0">+7 (999) 888-77-66</a>
+                                </div>
+                                <div class="sparay-min__img">
+                                    <div class="wrapper-img-sparay">
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="sparay-min__img-item count-sparay-girls">
+                                        +3
+                                    </div>
+                                </div>
+                                <div class="wrapper-button-see">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay.webp" alt="">
+                                <div class="catalog__img-content2 sparay__vip">
+                                    <img src="img/icons/vip.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-sparay-link">
+                                    <a href="tel:+7 (999) 888-77-66" class="sparay__link" tabindex="0">+7 (999) 888-77-66</a>
+                                </div>
+                                <div class="sparay-min__img">
+                                    <div class="wrapper-img-sparay">
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="sparay-min__img-item count-sparay-girls">
+                                        +3
+                                    </div>
+                                </div>
+                                <div class="wrapper-button-see">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay.webp" alt="">
+                                <div class="catalog__img-content2 sparay__vip">
+                                    <img src="img/icons/vip.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-sparay-link">
+                                    <a href="tel:+7 (999) 888-77-66" class="sparay__link" tabindex="0">+7 (999) 888-77-66</a>
+                                </div>
+                                <div class="sparay-min__img">
+                                    <div class="wrapper-img-sparay">
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="sparay-min__img-item count-sparay-girls">
+                                        +3
+                                    </div>
+                                </div>
+                                <div class="wrapper-button-see">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay.webp" alt="">
+                                <div class="catalog__img-content2 sparay__vip">
+                                    <img src="img/icons/vip.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-sparay-link">
+                                    <a href="tel:+7 (999) 888-77-66" class="sparay__link" tabindex="0">+7 (999) 888-77-66</a>
+                                </div>
+                                <div class="sparay-min__img">
+                                    <div class="wrapper-img-sparay">
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                        <div class="sparay-min__img-item">
+                                            <img src="img/img-1.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="sparay-min__img-item count-sparay-girls">
+                                        +3
+                                    </div>
+                                </div>
+                                <div class="wrapper-button-see">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sparay-slider no-main-sparay-slider">
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sparay-slider no-main-sparay-slider">
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sparay-slider no-main-sparay-slider">
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sparay__item">
+                            <div class="sparay__img">
+                                <img src="img/sparay1.webp" alt="">
+                            </div>
+                            <div class="sparay__content">
+                                <h2 class="sparay__title">sparay</h2>
+                                <div class="sparay-info">
+                                    <div class="sparay-info__item">1 час от 2000 руб.</div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">девушки (<span>10</span>)</a>
+                                    </div>
+                                    <div class="sparay-info__item">
+                                        <a href="#">Программы (<span>10</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="sparay__geo">
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Город: <span>Екатеринбург</span></span>
+                                    </a>
+                                    <a href="#" class="header__geolocation">
+                                        <svg class="header__icon">
+                                            <use xlink:href="img/svg/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="header__title">Метро: <span>Кутузовская</span></span>
+                                    </a>
+                                </div>
+                                <div class="wrapper-button-see flex-start">
+                                    <button class="btn-site btn-see btn_uper btn-type-1">смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navigation navigation_p_t">
+                        <div class="navigation__info">
+                            <span>Стр. <span>1</span> из <span>20</span></span>
+                        </div>
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link active"><span>1</span></a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link"><span>2</span></a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link"><span>3</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+<!-- подвал сайта -->
+
+<footer class="footer">
+
+    <div class="footer__main">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col-4">
+                    <h4 class="footer__title">инфо</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">О проекте</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Реклама</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Регистрация</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                    <h4 class="footer__title">Аккаунт</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Мой аккаунт</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Анкета</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Статистика</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Пополнить баланс</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__list">
+                        <li>
+                            <p>21 Love Lane, New York,<br> USA 01920</p>
+                        </li>
+                        <li>
+                            <a href="tel:79999999999" class="footer__list--link">+7 999 999 99 99</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__list--link">Telegram</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@modellic.com" class="footer__list--link">info@modellic.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                    <h4 class="footer__title">О нас</h4>
+                    <ul class="footer__list">
+                        <li>
+                            <p>Quisque porttitor tortor leo, at dapibus mi eleifend sit amet. Praesent eget scelerisque
+                                odio. Morbi semper velit in pharetra mollis...</p>
+                            <p><a href="#" class="text-link"><span>Узнать больше</span></a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bot">
+        <div class="container">
+            <div class="footer__bot--row">
+                <div class="footer__bot--copirite">© 2020 VIP </div>
+                <div class="footer__bot--text"><a href="#" class="polis-link">Политика конфедициальности</a></div>
+            </div>
+        </div>
+    </div>
+</footer>    </div>
+
+ <!-- попап -->
+    <div class="popup js-popup" data-id-popup="popup-0">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup_container">
+                <h2>Попап</h2>
+            </div>
+        </div>
+    </div>
+ <!-- кнопка прокрутки вверх -->
+    <!-- <div class="scroll-up js-scroll-up">
+        <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+            <path class="scroll-up__path js-scroll-up__path" d="M24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48"/>
+        </svg>
+    </div> -->
+    
+    <!-- Подключеине скриптов -->
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="libs/fancybox3/jquery.fancybox.min.js"></script>
+    <script src="libs/ion/ion.rangeSlider.min.js"></script>
+    <!-- <script src="libs/jquery-ui.min.js"></script>
+    <script src="libs/jquery.ui.touch-punch.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
