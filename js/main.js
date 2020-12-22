@@ -2,6 +2,44 @@
 'use strict'
 $(document).ready(function () {
 
+    /* popup */
+
+    function openPopup(id, ths) {
+        let popup = $(".js-popup[data-id-popup='" + id + "']")
+        popup.fadeIn(300);
+        $('body').addClass('lock');
+
+        if (popup.hasClass('js-popup-galery')) {
+            let closGalery = ths.closest('.js-galery-item');
+            popupGalery(closGalery);
+        }
+
+    }
+
+    function close_popup() {
+        $('.js-popup').fadeOut(300);
+        $('body').removeClass('lock');
+    }
+
+    $('.js-popup__close').click(close_popup);
+
+    $('.js-btn-popup').click(function (e) {
+        e.preventDefault();
+
+        let index_btn_popup = $(this).attr('href');
+        openPopup(index_btn_popup, $(this));
+    });
+
+    $('.js-prev').click(function (event) {
+        event.preventDefault();
+    })
+
+    $('.js-popup').click(function (e) {
+        let popup = $('.js-popup__wrapp');
+        if (!popup.is(e.target) && popup.has(e.target).length === 0)
+            close_popup();
+    });
+
 
     /*el-select*/
     const ITEM_SELECT = $('.js-select-item');
@@ -268,20 +306,20 @@ $(document).ready(function () {
 
     /*показать список в футер на моб.*/
 
-    $('.footer__title').click(function () {
-        if ($(window).width() <= 480) {
-            let ths = $(this);
-            let clos = ths.closest('.footer__col-4');
+    // $('.footer__title').click(function () {
+    //     if ($(window).width() <= 480) {
+    //         let ths = $(this);
+    //         let clos = ths.closest('.footer__col-4');
 
-            if (!clos.hasClass('active')) {
-                clos.addClass('active');
-                clos.find('.footer__list').slideDown(300);
-            } else {
-                clos.removeClass('active');
-                clos.find('.footer__list').slideUp(300);
-            }
-        }
-    });
+    //         if (!clos.hasClass('active')) {
+    //             clos.addClass('active');
+    //             clos.find('.footer__list').slideDown(300);
+    //         } else {
+    //             clos.removeClass('active');
+    //             clos.find('.footer__list').slideUp(300);
+    //         }
+    //     }
+    // });
 
 
 
