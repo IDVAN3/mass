@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<!-- Оболочка документа -->
+<html lang="ru">
+
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <title>Личный кабинет форма </title>
+    <meta name="description" content="Massage">
+    <meta name="keywords" content="Massage">
+
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="libs/fancybox3/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- ОБОЛОЧКА -->
+    <div class="wrapper wrapper_bg" style="background-image: url(img/bg-main-screen.webp);">
+
+        <div class="wrapper__content">
+<!-- шапка сайта -->
+
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <!--этот класс только на главной no-pointer -->
+                    <a href="#" class="no-pointer ">
+                        <img src="img/svg/logo.svg" alt="">
+                    </a>
+                </div>
+                <a href="#" class="header__geolocation pc-v">
+                    <svg class="header__icon">
+                        <use xlink:href="img/svg/sprite.svg#geo"></use>
+                    </svg>
+                    <span class="header__title">Город: <span>Екатеринбург</span></span>
+                </a>
+                <a href="#" class="header__geolocation pc-v">
+                    <svg class="header__icon">
+                        <use xlink:href="img/svg/sprite.svg#geo"></use>
+                    </svg>
+                    <span class="header__title">Метро: <span>Кутузовская</span></span>
+                </a>
+            </div>
+            <div class="header__wr-menu">
+                <nav class="header__menu header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link"><span>Анкеты</span></a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">
+                                <i class="svg-icons svg-icons_out">
+                                    <svg>
+                                        <use xlink:href="img/svg/sprite.svg#out"></use>
+                                    </svg>
+                                </i>
+                                <span>Выход</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__burger js-burger-menu">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu js-mob-menu">
+    <div class="mobile-menu__close">
+        <a href="#" class="js-close-mob-menu">
+            <svg>
+                <use xlink:href="img/svg/sprite.svg#close1"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="mobile-menu__content">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="#">О проекте</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#">Реклама</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#">Регистрация</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="header-menu__link">
+                    <i class="svg-icons svg-icons_out">
+                        <svg>
+                            <use xlink:href="img/svg/sprite.svg#out"></use>
+                        </svg>
+                    </i>
+                    <span>Выход</span>
+                </a>
+            </li>
+            <!-- <li class="mobile-menu__item">
+                <a href="#">Войти</a>
+            </li> -->
+        </ul>
+    </div>
+</div>
+
+<div class="bg-mob js-bg-mob"></div>
+            <section class="main-screen">
+                <div class="container">
+                    <div class="cabinet">
+                        <h1 class="title-type-1 main-screen__title t_underline">личный кабинет</h1>
+                        <div class="cabinet__tabs">
+                            <a href="#" class="cabinet__item-tab active">мой салон</a>
+                            <a href="#" class="cabinet__item-tab">vip</a>
+                            <a href="#" class="cabinet__item-tab">настройки</a>
+                        </div>
+                        <div class="cabinet__form">
+                            <div class="row-filter ">
+                                <div class="cabinet__text-form">
+                                    <p>Заполните форму, чтобы добавить анкету на сайт.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#">
+                            <div class="cabinet__form cabinet__form_items pb50">
+                                <div class="title-type-2 title-form_bot">информация</div>
+                                <div class="rowe-for">
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item">
+                                            <input type="text" name="name" class="in-type-3" placeholder="Имя">
+                                        </div>
+                                    </div>
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item">
+                                            <div class="el-select js-select">
+                                                <div class="el-select__main js-select-main">
+                                                    <span
+                                                        class="el-select__text js-select-text"><span>Город</span></span>
+                                                    <i class="svg-icons">
+                                                        <svg>
+                                                            <use xlink:href="img/svg/sprite.svg#arrow-bot"></use>
+                                                        </svg>
+                                                    </i>
+                                                </div>
+                                                <div class="el-select__content js-content-select">
+                                                    <div class="el-select__scroll">
+                                                        <ul class="el-select__list">
+                                                            <li class="el-select__item js-select-item" data-id="0">
+                                                                <span>Москва 1</span></li>
+                                                            <li class="el-select__item js-select-item" data-id="1">
+                                                                <span>Нижний Новгород</span>
+                                                            </li>
+                                                            <li class="el-select__item js-select-item" data-id="2">
+                                                                <span>Екатеринбург</span></li>
+                                                            <li class="el-select__item js-select-item" data-id="3">
+                                                                <span>Санкт-Петербург</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item">
+                                            <div class="el-select js-select">
+                                                <div class="el-select__main js-select-main">
+                                                    <span
+                                                        class="el-select__text js-select-text"><span>Метро</span></span>
+                                                    <i class="svg-icons">
+                                                        <svg>
+                                                            <use xlink:href="img/svg/sprite.svg#arrow-bot"></use>
+                                                        </svg>
+                                                    </i>
+                                                </div>
+                                                <div class="el-select__content js-content-select">
+                                                    <div class="el-select__scroll">
+                                                        <ul class="el-select__list">
+                                                            <li class="el-select__item js-select-item" data-id="0">
+                                                                <span>Район 1</span></li>
+                                                            <li class="el-select__item js-select-item" data-id="1">
+                                                                <span>Район 2</span>
+                                                            </li>
+                                                            <li class="el-select__item js-select-item" data-id="2">
+                                                                <span>Район 3</span></li>
+                                                            <li class="el-select__item js-select-item" data-id="3">
+                                                                <span>Район 4</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rowe-for">
+                                    <div class="rowe-for__item rowe-for__item-col-12">
+                                        <div class="form-item">
+                                            <textarea class="textarea-type-2 textarea_he"
+                                                placeholder="О себе"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cabinet__form cabinet__form_items pb50">
+                                <div class="title-type-2 title-form_bot">параметры</div>
+                                <div class="rowe-for">
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item">
+                                                <input type="text" name="name" class="in-type-3" placeholder="Возраст">
+                                        </div>
+                                    </div>
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item">
+                                            <input type="text" name="name" class="in-type-3" placeholder="Вес">
+                                        </div>
+                                    </div>
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item">
+                                            <div class="el-select js-select">
+                                                <div class="el-select__main js-select-main">
+                                                    <span
+                                                        class="el-select__text js-select-text"><span>Грудь</span></span>
+                                                    <i class="svg-icons">
+                                                        <svg>
+                                                            <use xlink:href="img/svg/sprite.svg#arrow-bot"></use>
+                                                        </svg>
+                                                    </i>
+                                                </div>
+                                                <div class="el-select__content js-content-select">
+                                                    <div class="el-select__scroll">
+                                                        <ul class="el-select__list">
+                                                            <li class="el-select__item js-select-item" data-id="0">
+                                                                <span>Грудь 1</span></li>
+                                                            <li class="el-select__item js-select-item" data-id="1">
+                                                                <span>Грудь 2</span>
+                                                            </li>
+                                                            <li class="el-select__item js-select-item" data-id="2">
+                                                                <span>Грудь 3</span></li>
+                                                            <li class="el-select__item js-select-item" data-id="3">
+                                                                <span>Грудь 4</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rowe-for">
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item">
+                                                <input type="text" name="name" class="in-type-3" placeholder="Рост">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cabinet__form cabinet__form_max-590 cabinet__form_items">
+                                <div class="title-type-2 title-form_bot pt50">цены</div>
+                                <div class="rowe-for row-form-flex">
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item pb18">
+                                            <div class="form-item">
+                                                <div class="el-select js-select">
+                                                    <div class="el-select__main js-select-main">
+                                                        <span
+                                                            class="el-select__text js-select-text"><span>Время</span></span>
+                                                        <i class="svg-icons">
+                                                            <svg>
+                                                                <use xlink:href="img/svg/sprite.svg#arrow-bot"></use>
+                                                            </svg>
+                                                        </i>
+                                                    </div>
+                                                    <div class="el-select__content js-content-select">
+                                                        <div class="el-select__scroll">
+                                                            <ul class="el-select__list">
+                                                                <li class="el-select__item js-select-item" data-id="0">
+                                                                    <span>Время 1</span></li>
+                                                                <li class="el-select__item js-select-item" data-id="1">
+                                                                    <span>Время 2</span>
+                                                                </li>
+                                                                <li class="el-select__item js-select-item" data-id="2">
+                                                                    <span>Время 3</span></li>
+                                                                <li class="el-select__item js-select-item" data-id="3">
+                                                                    <span>Время 4</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item">
+                                            <div class="title-form-row">у себя</div>
+                                            <input type="text" name="name" class="in-type-3" placeholder="Цена">
+                                        </div>
+                                    </div>
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item">
+                                            <div class="title-form-row">выезд</div>
+                                            <input type="text" name="name" class="in-type-3" placeholder="Цена">
+                                            <label class="checkbox checkbox-form">
+                                                <input class="checkbox__input" type="checkbox" name="exit">
+                                                <span class="checkbox__label">Не работаю на выезд</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rowe-for row-form-flex js-slot">
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item pb18">
+                                            <div class="form-item">
+                                                <div class="el-select js-select">
+                                                    <div class="el-select__main js-select-main">
+                                                        <span
+                                                            class="el-select__text js-select-text"><span>Время</span></span>
+                                                        <i class="svg-icons">
+                                                            <svg>
+                                                                <use xlink:href="img/svg/sprite.svg#arrow-bot"></use>
+                                                            </svg>
+                                                        </i>
+                                                    </div>
+                                                    <div class="el-select__content js-content-select">
+                                                        <div class="el-select__scroll">
+                                                            <ul class="el-select__list">
+                                                                <li class="el-select__item js-select-item" data-id="0">
+                                                                    <span>Время 1</span></li>
+                                                                <li class="el-select__item js-select-item" data-id="1">
+                                                                    <span>Время 2</span>
+                                                                </li>
+                                                                <li class="el-select__item js-select-item" data-id="2">
+                                                                    <span>Время 3</span></li>
+                                                                <li class="el-select__item js-select-item" data-id="3">
+                                                                    <span>Время 4</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item">
+                                            <div class="title-form-row">у себя</div>
+                                            <input type="text" name="name" class="in-type-3" placeholder="Цена">
+                                        </div>
+                                    </div>
+                                    <div class="rowe-for__item rowe-for__item-col-4">
+                                        <div class="form-item">
+                                            <div class="title-form-row">выезд</div>
+                                            <input type="text" name="name" class="in-type-3" placeholder="Цена">
+                                            <label class="checkbox checkbox-form">
+                                                <input class="checkbox__input" type="checkbox" name="exit">
+                                                <span class="checkbox__label">Не работаю на выезд</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rowe-for rowe-for_marg-bot">
+                                    <a href="#" class="add-slot js-add-slot">+ Добавить еще один слот</a>
+                                </div>
+
+                            </div>
+                            <div class="cabinet__form cabinet__form_items pb50">
+                                <div class="title-type-2 title-form_bot pt50">Услуги</div>
+                                <div class="row-list-check row-list-check_mar-none">
+                                    <div class="df">
+                                        <div class="main-screen__param-item hide-item">
+                                            <h3 class="options__title">Место</h3>
+                                            <div class="wrapper-checkbox pl0"> 
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="place">
+                                                    <span class="checkbox__label">Квартира</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="place">
+                                                    <span class="checkbox__label">Баня / Сауна</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="place">
+                                                    <span class="checkbox__label">Гостиница</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="place">
+                                                    <span class="checkbox__label">Офис</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="place">
+                                                    <span class="checkbox__label">Апартаменты</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="main-screen__param-item hide-item">
+                                            <h3 class="options__title">Минет</h3>
+                                            <div class="wrapper-checkbox pl0"> 
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="blow">
+                                                    <span class="checkbox__label">С резинкой</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="blow">
+                                                    <span class="checkbox__label">Без резинки</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="blow">
+                                                    <span class="checkbox__label">Глубокий</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="blow">
+                                                    <span class="checkbox__label">В машине</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="blow">
+                                                    <span class="checkbox__label">Кунилингус</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="blow">
+                                                    <span class="checkbox__label">Анилингус</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="main-screen__param-item hide-item">
+                                            <h3 class="options__title">Окончание</h3>
+                                            <div class="wrapper-checkbox pl0"> 
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="end">
+                                                    <span class="checkbox__label">В рот</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="end">
+                                                    <span class="checkbox__label">На лицо</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="end">
+                                                    <span class="checkbox__label">На грудь</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="main-screen__param-item hide-item">
+                                            <h3 class="options__title pt0">Секс</h3>
+                                            <div class="wrapper-checkbox pl0"> 
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="sex">
+                                                    <span class="checkbox__label">Классический</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="sex">
+                                                    <span class="checkbox__label">Анальный</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="sex">
+                                                    <span class="checkbox__label">Групповой</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="sex">
+                                                    <span class="checkbox__label">Лесбийский</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cabinet__form cabinet__form_items pb50">
+                                <div class="title-type-2 title-form_bot pb30 pt50">фото</div>
+                                <div class="rowe-for">
+                                    <div class="rowe-for__col rowe-for__col_pad">
+                                        <div class="img-salon__input">
+                                            <input type="file" class="file-img">
+                                            <button type="submit"
+                                                class="btn-site btn_it-cat btn_uper btn-type-1">добавить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cabinet__form cabinet__form_items pb50">
+                                <div class="title-type-2 title-form_bot pb30 pt50">проверочное фото</div>
+                                <div class="rowe-for">
+                                    <div class="rowe-for__col rowe-for__col_flex rowe-for__col_pad">
+                                        <div class="img-salon__input">
+                                            <input type="file" class="file-img">
+                                            <button type="submit"
+                                                class="btn-site btn_it-cat btn_uper btn-type-1">добавить</button>
+                                        </div>
+                                        <div class="text-form-fot">
+                                            <p>Если вы хотите получить специальную отметку в анкете “Реальные фото”, то
+                                                отправьте нам селфи с листком бумаги и сегодняшней датой.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cabinet__form cabinet__form_items pt30">
+                                <div class="rowe-for">
+                                    <div class="rowe-for__col rowe-for__col_pad">
+                                        <button type="submit" class="btn-site btn_it-cat btn_uper btn-type-1">Создать
+                                            анкету</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            </section>
+
+
+        </div>
+<!-- подвал сайта -->
+
+<footer class="footer">
+
+    <div class="footer__main">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col-3">
+                    <h4 class="footer__title">инфо</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Индивидуалки</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Салоны</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Личный кабинет</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-3">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__list">
+                        <li>
+                            <p>По вопросам и предложениям пишите на почту:</p>
+                        </li>
+
+                        <li>
+                            <a href="mailto:info@modellic.com" class="footer__list--link">Support@vipxxx.cx</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer__bot">
+        <div class="container">
+            <div class="footer__bot--row">
+                <div class="footer__bot--copirite">© 2020 VIP </div>
+                <div class="footer__bot--text"><a href="#" class="polis-link">Политика конфедициальности</a></div>
+            </div>
+        </div>
+    </div> -->
+</footer>    </div>
+
+ <!-- попап -->
+    <div class="popup js-popup" data-id-popup="popup-0">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup__container">
+                <h2 class="popup__title">заголовок поп-апа</h2>
+                <p class="popup__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+    </div>
+ <!-- кнопка прокрутки вверх -->
+    <!-- <div class="scroll-up js-scroll-up">
+        <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+            <path class="scroll-up__path js-scroll-up__path" d="M24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48"/>
+        </svg>
+    </div> -->
+    
+    <!-- Подключеине скриптов -->
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="libs/fancybox3/jquery.fancybox.min.js"></script>
+    <script src="libs/ion/ion.rangeSlider.min.js"></script>
+    <!-- <script src="libs/jquery-ui.min.js"></script>
+    <script src="libs/jquery.ui.touch-punch.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

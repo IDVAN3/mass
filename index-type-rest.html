@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!-- Оболочка документа -->
+<html lang="ru">
+
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <title>Главная филтер </title>
+    <meta name="description" content="Massage">
+    <meta name="keywords" content="Massage">
+
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- ОБОЛОЧКА -->
+    <div class="wrapper wrapper_bg" style="background-image: url(img/bg-main-screen.webp);">
+
+        <div class="wrapper__content">
+<!-- шапка сайта -->
+
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <!--этот класс только на главной no-pointer -->
+                    <a href="#" class="no-pointer ">
+                        <img src="img/svg/logo.svg" alt="">
+                    </a>
+                </div>
+                <a href="#" class="header__geolocation pc-v">
+                    <svg class="header__icon">
+                        <use xlink:href="img/svg/sprite.svg#geo"></use>
+                    </svg>
+                    <span class="header__title">Город: <span>Екатеринбург</span></span>
+                </a>
+                <a href="#" class="header__geolocation pc-v">
+                    <svg class="header__icon">
+                        <use xlink:href="img/svg/sprite.svg#geo"></use>
+                    </svg>
+                    <span class="header__title">Метро: <span>Кутузовская</span></span>
+                </a>
+            </div>
+            <div class="header__wr-menu">
+                <nav class="header__menu header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link"><span>Анкеты</span></a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link"><span>Личный кабинет</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__burger js-burger-menu">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu js-mob-menu">
+    <div class="mobile-menu__close">
+        <a href="#" class="js-close-mob-menu">
+            <svg>
+                <use xlink:href="img/svg/sprite.svg#close1"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="mobile-menu__content">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="#">О проекте</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#">Реклама</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#">Регистрация</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="header-menu__link">
+                    <i class="svg-icons svg-icons_out">
+                        <svg>
+                            <use xlink:href="img/svg/sprite.svg#out"></use>
+                        </svg>
+                    </i>
+                    <span>Выход</span>
+                </a>
+            </li>
+            <!-- <li class="mobile-menu__item">
+                <a href="#">Войти</a>
+            </li> -->
+        </ul>
+    </div>
+</div>
+
+<div class="bg-mob js-bg-mob"></div>
+            <section class="main-screen">
+                <div class="container">
+                    <div class="main-screen__content">
+                        <h1 class="title-type-1 main-screen__title t_center t_underline">ЭРОТИЧЕСКИЙ МАССАЖ</h1>
+                        <div class="main-screen__text">
+                            <p>Наш сайт - лучший способ выбрать отдых, подходящий именно тебе</p>
+                        </div>
+                        <div class="main-screen__wr-btn">
+                            <div class="switch">
+                                <a href="#" class="switch__link  t_underline">ЧАСТНЫЙ</a>
+                                <a href="#" class="switch__link active t_underline">САЛОНЫ</a>
+                            </div>
+                        </div>
+                        <div class="main-screen__wr-filter">
+                            <form action="#">
+                                <div class="row-filter rows">
+                                    <div class="row-filter__item col-4">
+                                        <div class="form-item">
+                                            <div class="el-select js-select">
+                                                <div class="el-select__main js-select-main">
+                                                    <span
+                                                        class="el-select__text js-select-text"><span>Город</span></span>
+                                                    <i class="svg-icons">
+                                                        <svg>
+                                                            <use xlink:href="img/svg/sprite.svg#arrow-bot"></use>
+                                                        </svg>
+                                                    </i>
+                                                </div>
+                                                <div class="el-select__content js-content-select">
+                                                    <div class="el-select__scroll">
+                                                        <ul class="el-select__list">
+                                                            <li class="el-select__item js-select-item" data-id="0">
+                                                                <span>Москва 1</span></li>
+                                                            <li class="el-select__item js-select-item" data-id="1">
+                                                                <span>Нижний Новгород</span>
+                                                            </li>
+                                                            <li class="el-select__item js-select-item" data-id="2">
+                                                                <span>Екатеринбург</span></li>
+                                                            <li class="el-select__item js-select-item" data-id="3">
+                                                                <span>Санкт-Петербург</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row-filter__item col-4">
+                                        <div class="form-item">
+                                            <div class="el-select js-select">
+                                                <div class="el-select__main js-select-main">
+                                                    <span
+                                                        class="el-select__text js-select-text"><span>Район</span></span>
+                                                    <i class="svg-icons">
+                                                        <svg>
+                                                            <use xlink:href="img/svg/sprite.svg#arrow-bot"></use>
+                                                        </svg>
+                                                    </i>
+                                                </div>
+                                                <div class="el-select__content js-content-select">
+                                                    <div class="el-select__scroll">
+                                                        <ul class="el-select__list">
+                                                            <li class="el-select__item js-select-item" data-id="0">
+                                                                <span>Район 1</span></li>
+                                                            <li class="el-select__item js-select-item" data-id="1">
+                                                                <span>Район 2</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row-filter__item col-4">
+                                        <div class="form-item">
+                                            <div class="title-form-row">Цена</div>
+                                            <label class="item-form-prise">
+                                                <span>От</span>
+                                                <input type="text" placeholder="1000" size="1"
+                                                    class="in-form-price js-in-price">
+                                                <span>руб.</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row-filter__item col-4">
+                                        <div class="form-item">
+                                            <label class="item-form-prise">
+                                                <span>До</span>
+                                                <input type="text" placeholder="2000" size="1"
+                                                    class="in-form-price js-in-price">
+                                                <span>руб.</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-row-filter none" data-filter="0">
+                                    <div class="row-filter rows">
+                                        <div class="row-filter__item col-4">
+                                        </div>
+                                        <div class="row-filter__item col-4">
+                                            <div class="form-item">
+                                                <div class="title-form-row">отзывы</div>
+                                                <div class="row-chek-btn">
+                                                    <label class="el-check">
+                                                        <input type="radio" name="el-reviews" checked>
+                                                        <i></i>
+                                                        <span>Да</span>
+                                                    </label>
+                                                    <label class="el-check">
+                                                        <input type="radio" name="el-reviews">
+                                                        <i></i>
+                                                        <span>Нет </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row-filter__item col-4">
+                                            <div class="form-item">
+                                                <div class="title-form-row">рейтинг</div>
+                                                <div class="star star-btn">
+                                                    <input type="radio" name="star-radio" id="star-1">
+                                                    <label for="star-1">
+                                                        <span class="star__item"></span>
+                                                    </label>
+                                                    <input type="radio" name="star-radio" checked id="star-2">
+                                                    <label for="star-2">
+                                                        <span class="star__item"></span>
+                                                    </label>
+                                                    <input type="radio" name="star-radio" id="star-3">
+                                                    <label for="star-3">
+                                                        <span class="star__item"></span>
+                                                    </label>
+                                                    <input type="radio" name="star-radio" id="star-4">
+                                                    <label for="star-4">
+                                                        <span class="star__item"></span>
+                                                    </label>
+                                                    <input type="radio" name="star-radio" id="star-5">
+                                                    <label for="star-5">
+                                                        <span class="star__item"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row-filter__item col-4">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-filter">
+                                    <div class="row-filter__show">
+                                        <a href="#" class="show-filter js-show-filter" data-filter="0">
+                                            <span>Расширенный поиск</span>
+                                            <i class="svg-icons">
+                                                <svg>
+                                                    <use xlink:href="img/svg/sprite.svg#arrow-bot"></use>
+                                                </svg>
+                                            </i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row-filter__btn-submit">
+                                    <button class="btn-site btn-submit btn_uper btn-type-1">поиск</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-catalog">
+                <div class="container">
+                    <div class="catalog catalog_row">
+                        <div class="row-page flex-wrap">
+                            <div class="col-2">
+                                <div class="cat-row cat-row_mod" style="background-image: url(img/item-cat-4.webp);">
+                                    <a href="#" class="cat-row__title">sparay</a>
+                                    <div class="cat-row__star">
+                                        <div class="star">
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cat-row__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada, ante
+                                            eu
+                                            aliquam dapibus.</p>
+                                    </div>
+                                    <div class="cat-row__btn">
+                                        <a href="#" class="btn-site btn_it-cat btn_uper btn-type-1">смотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="cat-row cat-row_mod" style="background-image: url(img/item-cat-5.webp);">
+                                    <a href="#" class="cat-row__title">КРУЖЕВА</a>
+                                    <div class="cat-row__star">
+                                        <div class="star">
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cat-row__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada, ante
+                                            eu aliquam dapibus.</p>
+                                    </div>
+                                    <div class="cat-row__btn">
+                                        <a href="#" class="btn-site btn_it-cat btn_uper btn-type-1">смотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="cat-row cat-row_mod" style="background-image: url(img/item-cat-4.webp);">
+                                    <a href="#" class="cat-row__title">sparay</a>
+                                    <div class="cat-row__star">
+                                        <div class="star">
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cat-row__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada, ante
+                                            eu
+                                            aliquam dapibus.</p>
+                                    </div>
+                                    <div class="cat-row__btn">
+                                        <a href="#" class="btn-site btn_it-cat btn_uper btn-type-1">смотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="cat-row cat-row_mod" style="background-image: url(img/item-cat-5.webp);">
+                                    <a href="#" class="cat-row__title">КРУЖЕВА</a>
+                                    <div class="cat-row__star">
+                                        <div class="star">
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cat-row__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada, ante
+                                            eu aliquam dapibus.</p>
+                                    </div>
+                                    <div class="cat-row__btn">
+                                        <a href="#" class="btn-site btn_it-cat btn_uper btn-type-1">смотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="cat-row cat-row_mod" style="background-image: url(img/item-cat-4.webp);">
+                                    <a href="#" class="cat-row__title">sparay</a>
+                                    <div class="cat-row__star">
+                                        <div class="star">
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cat-row__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada, ante
+                                            eu
+                                            aliquam dapibus.</p>
+                                    </div>
+                                    <div class="cat-row__btn">
+                                        <a href="#" class="btn-site btn_it-cat btn_uper btn-type-1">смотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="cat-row cat-row_mod" style="background-image: url(img/item-cat-5.webp);">
+                                    <a href="#" class="cat-row__title">КРУЖЕВА</a>
+                                    <div class="cat-row__star">
+                                        <div class="star">
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item active"></div>
+                                            <div class="star__item"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cat-row__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada, ante
+                                            eu aliquam dapibus.</p>
+                                    </div>
+                                    <div class="cat-row__btn">
+                                        <a href="#" class="btn-site btn_it-cat btn_uper btn-type-1">смотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation navigation_p_t">
+                        <div class="navigation__info">
+                            <span>Стр. <span>1</span> из <span>20</span></span>
+                        </div>
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link"><span>1</span></a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link active"><span>2</span></a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link"><span>3</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+<!-- подвал сайта -->
+
+<footer class="footer">
+
+    <div class="footer__main">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col-3">
+                    <h4 class="footer__title">инфо</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Индивидуалки</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Салоны</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Личный кабинет</a>
+                        </li>
+                        <li class="footer__list--item">
+                            <a href="#" class="footer__list--link">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col-3">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__list">
+                        <li>
+                            <p>По вопросам и предложениям пишите на почту:</p>
+                        </li>
+
+                        <li>
+                            <a href="mailto:info@modellic.com" class="footer__list--link">Support@vipxxx.cx</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer__bot">
+        <div class="container">
+            <div class="footer__bot--row">
+                <div class="footer__bot--copirite">© 2020 VIP </div>
+                <div class="footer__bot--text"><a href="#" class="polis-link">Политика конфедициальности</a></div>
+            </div>
+        </div>
+    </div> -->
+</footer>    </div>
+
+ <!-- попап -->
+    <div class="popup js-popup" data-id-popup="popup-0">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup__container">
+                <h2 class="popup__title">заголовок поп-апа</h2>
+                <p class="popup__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+    </div>
+ <!-- кнопка прокрутки вверх -->
+    <!-- <div class="scroll-up js-scroll-up">
+        <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+            <path class="scroll-up__path js-scroll-up__path" d="M24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48"/>
+        </svg>
+    </div> -->
+    
+    <!-- Подключеине скриптов -->
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="libs/fancybox3/jquery.fancybox.min.js"></script>
+    <script src="libs/ion/ion.rangeSlider.min.js"></script>
+    <!-- <script src="libs/jquery-ui.min.js"></script>
+    <script src="libs/jquery.ui.touch-punch.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
