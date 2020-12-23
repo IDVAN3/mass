@@ -2108,9 +2108,6 @@ button.btn_it-cat {
 .table-grid__row .table-grid__col:nth-child(3) {
   text-align: right;
 }
-.table-grid__row:not(:first-child) {
-  border-bottom: 1px solid #282828;
-}
 
 .flex-start {
   justify-content: flex-start;
@@ -3666,6 +3663,18 @@ button.btn_it-cat {
 
 .no100 {
   width: auto !important;
+}
+
+.pb35 {
+  padding-bottom: 35px;
+}
+
+.grid-1 {
+  border: none;
+  padding-bottom: 0 !important;
+}
+.grid-1 .form-item {
+  padding-top: 0px;
 }
 
 /*_media.scss*/
