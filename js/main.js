@@ -224,6 +224,16 @@ $(document).ready(function () {
         DIV_CONT.after(DIV_CONT.clone());
     });
 
+    /*добавить блок*/
+    const btnDEV = $('.js-add-dev');
+    const DEV_CONT = $('.js-row-cont-cab__dev');
+
+    btnDEV.click(function (e) {
+        e.preventDefault();
+
+        DEV_CONT.after(DEV_CONT.clone());
+    });
+
     /*добавление фото*/
     const IN_FILE = $('.js-input-img');
 
