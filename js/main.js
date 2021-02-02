@@ -405,5 +405,17 @@ $(document).ready(function () {
         force_edges: true, 
     });
 
+    //rating 
+
+    const ratingItemsList = document.querySelectorAll('.rating__item');
+    const ratingItemsAray = Array.prototype.slice.call(ratingItemsList);
+
+    ratingItemsAray.forEach(item =>
+        item.addEventListener('click', () => {
+            const { itemValue } = item.dataset;
+            item.parentNode.dataset.totalValue = itemValue;
+        })
+    )
+
 });
 /*end script*/
