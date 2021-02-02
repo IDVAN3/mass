@@ -3793,7 +3793,7 @@ button.btn_it-cat {
 /*_media.scss*/
 @media (max-width: 1200px) {
   .catalog-index {
-    margin: 0;
+    margin: -20px;
   }
 
   .footer__col-3:first-child {
@@ -4353,6 +4353,10 @@ button.btn_it-cat {
   }
 }
 @media (max-width: 640px) {
+  .city-container {
+    padding: 29px 19px;
+  }
+
   .city-list li {
     flex: 0 0 100%;
   }
